@@ -8,10 +8,12 @@ public class SnakeLadderSimulationUC1
   public static void main(String args[])
   {
    int position=0;
+   int DiceCount=0;
    while(position!=Max)
    {
       int diceroll=(int)(Math.random()*10)%6+1;
       int option =(int)(Math.random()*10)%3;
+      DiceCount++;
       if(option==NoPlay)
         position=position+0;
       else if(option==Ladder)
@@ -26,8 +28,9 @@ public class SnakeLadderSimulationUC1
           if(position<0)
           position=0;
          }
-    }
-     System.out.println("The Player is playing the game");
+     System.out.println("Position after "+DiceCount+" is "+position);
+     }
+   System.out.println("The dice rolled for "+DiceCount+" times");
    }
 }
 
