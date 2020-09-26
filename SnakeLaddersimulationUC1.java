@@ -1,4 +1,4 @@
-public class SnakeLadderSimulationUC2
+public class SnakeLadderSimulationUC1
 {
    public static void main(String args[])
    {
