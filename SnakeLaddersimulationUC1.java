@@ -15,8 +15,12 @@ public class SnakeLadderSimulationUC1
       if(option==NoPlay)
         position=position+0;
       else if(option==Ladder)
-        position=position+diceroll;
-      else
+        {
+          position=position+diceroll;
+          if(position>Max)
+          position=position-diceroll;
+         }
+       else
         { 
           position=position-diceroll;
           if(position<0)
@@ -26,6 +30,7 @@ public class SnakeLadderSimulationUC1
      System.out.println("The Player is playing the game");
    }
 }
+
 
 
 
